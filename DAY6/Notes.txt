@@ -1,0 +1,42 @@
+Order of Initialization
+1. Static, 
+2. Non Static
+3. Constructors
+
+The lifeline of a variable inside a block ends, as soon as the Block ends. Block --> Code Inside these braces { }
+
+
+class TestDemo
+{
+	String text = "Java";		         // --> Instance Variables
+	static String textNow = "Programming";   // --> Instance Variables
+
+  
+	{
+
+		System.out.println(textNow);
+		String text = "Core Java";   //The scope of this block ends as soon as the bracket closes. // --> Instance Initialization
+
+		System.out.println(text);
+		System.out.println("Inside an Initializer block"); 
+	}
+
+	{
+		System.out.println(text);
+		System.out.println("Instance Initializer block 1");
+	}
+
+	//Constructor
+	TestDemo(){
+		System.out.println("Inside Constructor");  // --> Constructor
+	}
+
+	static {
+		System.out.println("Inside a Static Block");
+		// System.out.println(text); Non static variallble, therefore cannnot be called inside a static class.
+	}
+
+	public static void main(String args[]){
+		TestDemo obj1 = new TestDemo();
+	}
+}

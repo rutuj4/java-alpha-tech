@@ -1,0 +1,18 @@
+Constructor - Initialize an instance of a class/state of an object.
+It will be called automatically.
+
+Rules:
+1. Have same name as that of a class
+	class Student {}
+	Student stud = new Student();
+
+MEMORY ALLOCATION
+1. STACK  2. HEAP
+
+   stud--->student
+
+References will be stored in STACK
+
+gc();
+Garbage collector
+In HEAP there can be many objects which can be lying unused for long time. Heap will run and store that unused objects in gc();.
