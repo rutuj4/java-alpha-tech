@@ -1,0 +1,8 @@
+Inheritance
+
+1. Single
+Animals (Parent class) -> Dog (Child class)
+
+2. Multilevel
+3. Hybrid
+4. Hierarchical
