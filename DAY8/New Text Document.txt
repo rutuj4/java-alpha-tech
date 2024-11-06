@@ -1,0 +1,19 @@
+public class LinearSearch {
+	
+	void linearSearch (int[] arr, int n){
+		for(i = 0; i< n; i++){
+			if(arr[i] == n){
+				System.out.println("Found the value.");
+			}
+			else{
+				System.out.println("Not found");
+			}
+		}
+	}
+	
+	public static void main(String []args){
+		int[] a1= [10,20,30,40,50];
+		int key = 30;
+		System.out.println(n+ "is found index: " + linearSearch(a1,key));
+	}
+}
