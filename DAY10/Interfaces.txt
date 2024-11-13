@@ -1,0 +1,45 @@
+Interfaces -> contract b/w java developer and client.
+
+In interfaces, we don't have -> {}
+
+Here, public static abstract keyword will eb automatically given.
+
+method signature - return type methodname(args);
+int add(int,int);
+
+Diff b/w extends and implements:
+
+"extends" - One class inherits the property of another class
+"implements" - 
+public abstract
+
+We use interfaces coz it gives "loose coupling"
+coupling - means connection
+
+Loose coupling - Means if we make any change in obj1, its not necessary to make change in obj2 
+Tight coupling - Means if we make any change in obj1, we must make change in obj2
+
+Syntax:
+
+interface IAdd(){
+	int add(int a, int b);
+}
+
+class Add implements IAdd {
+	@Override
+	int add(int a, int b) {
+		int c = a+b;
+		return c;
+	}
+}
+
+class AddDemo{
+	public static void main(String []args){
+		Add addObj = new Add();
+		int res = addObj.add(3,4);
+		System.out.println(res);
+	}
+}
+
+@ - annotation - special keywords that give information to compiler
+
